@@ -30,26 +30,26 @@
 操作: 在 DrumMachine 中导入 drumPads 和 DrumPad，使用 map 渲染。
 
 阶段二：音频播放与显示功能
-[ ] 实现点击播放音频功能 (为 .drum-pad 添加 onClick 事件，播放其子 audio 元素)
+[✓] 实现点击播放音频功能 (为 .drum-pad 添加 onClick 事件，播放其子 audio 元素)
 
 依赖: 创建 DrumPad 子组件
 
 操作: 在 DrumPad 组件中使用 useRef 获取 audio 引用，并在 onClick 中调用 audioRef.current.play()。
 
-[ ] 实现键盘按键播放音频功能 (添加全局 keydown 事件监听器，根据按键触发对应鼓垫的音频)
+[✓] 实现键盘按键播放音频功能 (添加全局 keydown 事件监听器，根据按键触发对应鼓垫的音频)
 
 依赖: 在 DrumMachine 中渲染所有鼓垫
 
 操作: 在 DrumMachine 中使用 useEffect 监听 keydown 事件，通过 document.getElementById() 找到并播放音频。
 
-[ ] 更新显示区域 (Display) (当音频播放时，在 #display 元素中显示当前音频剪辑的名称)
+[✓] 更新显示区域 (Display) (当音频播放时，在 #display 元素中显示当前音频剪辑的名称)
 
 依赖: 实现点击播放音频功能, 实现键盘按键播放音频功能
 
 操作: 在 DrumMachine 中使用 useState 管理显示文本，通过 prop 传递给 DrumPad 或在键盘事件中直接更新。
 
 阶段三：样式与最终调整
-[ ] 添加基本样式 (为鼓机界面添加 CSS 样式，包括布局、鼓垫外观和 :active 状态)
+[✓] 添加基本样式 (为鼓机界面添加 CSS 样式，包括布局、鼓垫外观和 :active 状态)
 
 依赖: 创建 DrumMachine 主组件, 创建 DrumPad 子组件
 
